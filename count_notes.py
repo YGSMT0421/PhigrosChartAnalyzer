@@ -205,10 +205,10 @@ def _arg_parser() -> Namespace:
         prog="Phigros官谱分析器",
         description="一个计算谱面文件音符数量和 BPM，并自动复制后重命名的命令行工具",
     )
-    ap.add_argument("source-folder", help="原谱面文件存放文件夹")
-    ap.add_argument("save-folder", help="处理后谱面文件的存放文件夹")
+    ap.add_argument("source_folder", help="原谱面文件存放文件夹")
+    ap.add_argument("save_folder", help="处理后谱面文件的存放文件夹")
     ap.add_argument(
-        "process-number",
+        "process_number",
         nargs="?",
         help="程序使用的进程数目（留空使用 CPU 核心数目）",
         type=int,
