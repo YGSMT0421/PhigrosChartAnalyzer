@@ -220,14 +220,14 @@ def _arg_parser() -> Namespace:
 # ===================== 命令行入口 =====================
 def main():
     args = _arg_parser()
-    src = Path(args.source)
-    out = Path(args.save)
+    src = Path(args.source_folder)
+    out = Path(args.save_folder)
     _check(src, True, strict=True)  # 源目录必须存在且为目录
     _check(
         out, True, strict=True, create=True
     )  # 目标目录必须存在且为目录（会自动创建）
 
-    run(src, out, args.process_num)
+    run(src, out, args.process_number)
 
 
 if __name__ == "__main__":

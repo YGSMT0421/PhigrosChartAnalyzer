@@ -1,4 +1,4 @@
-# 由deepseek生成
+# 由DeepSeek和ChatGPT生成
 
 name: CI
 
@@ -34,6 +34,8 @@ jobs:
         run: mypy . --ignore-missing-imports
 
   test:
+    env:
+      PYTHONIOENCODING: utf-8
     runs-on: ${{ matrix.os }}
     strategy:
       fail-fast: false
