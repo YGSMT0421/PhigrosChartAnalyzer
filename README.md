@@ -7,7 +7,7 @@
   <a href="https://github.com/YGSMT0421/PhigrosChartAnalyzer/blob/main/LICENSE">
     <img src="https://img.shields.io/github/license/YGSMT0421/PhigrosChartAnalyzer?style=flat-square" alt="License">
   </a>
-  <img src="https://img.shields.io/badge/Python-3.7%2B-blue?style=flat-square&logo=python" alt="Python 3.7+">
+  <img src="https://img.shields.io/badge/Python-3.10%2B-blue?style=flat-square&logo=python" alt="Python 3.10+">
   <img src="https://img.shields.io/badge/Platform-Windows%20%7C%20Linux%20%7C%20macOS-lightgrey?style=flat-square" alt="Platform">
 </p>
 
@@ -34,7 +34,7 @@
 ## 🚀 快速开始
 
 ### 环境要求
-- **Python 3.7** 或更高版本
+- **Python 3.10** 或更高版本
 - 仅使用Python标准库，无需额外安装依赖
 
 ### 安装方式
