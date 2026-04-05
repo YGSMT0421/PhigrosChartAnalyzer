@@ -224,8 +224,8 @@ def main():
     out = Path(args.save_folder)
     _check(src, True, strict=True)  # 源目录必须存在且为目录
     _check(
-        out, True, strict=True, create=True
-    )  # 目标目录必须存在且为目录（会自动创建）
+        out, True, create=True
+    )  # 目标目录会自动创建
 
     run(src, out, args.process_number)
 
