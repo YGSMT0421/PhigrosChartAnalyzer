@@ -40,8 +40,8 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        os: [ubuntu-latest, windows-latest]        # 主流系统
-        python-version: ['3.10', '3.12', '3.13', '3.14']   # 最低3.10（match语法要求）
+        os: [ubuntu-latest, windows-latest]
+        python-version: ['3.10', '3.12', '3.13', '3.14']
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
@@ -51,3 +51,7 @@ jobs:
         run: python --version
       - name: Check script can import and run --help
         run: python count_notes.py --help
+      - name: Install pytest
+        run: pip install pytest
+      - name: Run pytest
+        run: pytest
